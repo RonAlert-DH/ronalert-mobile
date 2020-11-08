@@ -199,7 +199,8 @@ export class WarningPage {
             TRUMP_SIZE
           );
         };
-        image.src = "assets/trump.png";
+        // image.src = "assets/trump.png";
+        image.src = "assets/virus.png";
       }
     });
   }

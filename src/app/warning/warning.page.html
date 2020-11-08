@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Warning
+      Room Overview - Pisarna
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -29,6 +29,10 @@
             <ion-label *ngIf="warning.type == 2">
               <h2 style="color: red">Distance violated</h2>
               <p>People in this room are too close to each other</p>
+            </ion-label>
+            <ion-label *ngIf="warning.type == 3">
+              <h2 style="color: red">Too manny people</h2>
+              <p>Too manny people is in the room</p>
             </ion-label>
           </ion-item>
         </ion-list>

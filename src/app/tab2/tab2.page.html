@@ -18,10 +18,10 @@
             <ion-select-option
               value="9E9C13B6-3FC6-4875-BD37-B9511DE0B082"
               selected
-              >9E9C13B6-3FC6-4875-BD37-B9511DE0B082</ion-select-option
+              >Pisarna</ion-select-option
             >
             <ion-select-option value="9E9C13B6-3FC6-4875-BD37-B9511DE0B083"
-              >9E9C13B6-3FC6-4875-BD37-B9511DE0B083</ion-select-option
+              >Sejna soba</ion-select-option
             >
           </ion-select>
 
@@ -38,6 +38,11 @@
               <h2>Distance violated</h2>
               <h3>{{warning.createdAtUtc | date}}</h3>
               <p>People in this room are too close to each other</p>
+            </ion-label>
+            <ion-label *ngIf="warning.type == 3">
+              <h2>Too manny people</h2>
+              <h3>{{warning.createdAtUtc | date}}</h3>
+              <p>Too manny people is in the room</p>
             </ion-label>
           </ion-item>
         </ion-list>
