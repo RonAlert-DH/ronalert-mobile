@@ -39,7 +39,7 @@ export class WarningPage {
     this.canvasWidth = this.canvas.nativeElement.width;
     this.canvasHeight = this.canvas.nativeElement.height;
     this.ctx = this.canvas.nativeElement.getContext("2d");
-    this.getWarnings();
+    //this.getWarnings();
 
     // while(true){
     //   await this.getPositions();
