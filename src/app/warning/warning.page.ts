@@ -46,7 +46,7 @@ export class WarningPage {
     // }
     this.subscription = timer(0, 500)
       .pipe(switchMap(() => this.getPositions()))
-      .subscribe((result) => console.log(result));
+      .subscribe((result) => {});
   }
 
   initCanvas() {
@@ -76,7 +76,7 @@ export class WarningPage {
       .pipe(first())
       .subscribe(
         (data) => {
-          console.log(data);
+          //console.log(data);
           this.warnings = data;
         },
         (error) => {}

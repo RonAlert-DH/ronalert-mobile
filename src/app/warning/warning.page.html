@@ -1,3 +1,11 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Warning
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
@@ -15,11 +23,11 @@
               <img src="assets/alert-circle-outline.svg" />
             </ion-avatar>
             <ion-label *ngIf="warning.type == 1">
-              <h2>Face Mask</h2>
+              <h2 style="color: red">Face Mask</h2>
               <p>A person in this room doesn't wear a face mask</p>
             </ion-label>
             <ion-label *ngIf="warning.type == 2">
-              <h2>Distance violated</h2>
+              <h2 style="color: red">Distance violated</h2>
               <p>People in this room are too close to each other</p>
             </ion-label>
           </ion-item>
