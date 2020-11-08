@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col class="canvas-wrap">
+        <canvas #canvas id="canvas" width="760" height="650"></canvas>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <ion-list-header> Current Warnings </ion-list-header>
+
+          <ion-item *ngFor="let warning of warnings">
+            <ion-avatar slot="start">
+              <img src="assets/alert-circle-outline.svg" />
+            </ion-avatar>
+            <ion-label *ngIf="warning.type == 1">
+              <h2>Face Mask</h2>
+              <p>A person in this room doesn't wear a face mask</p>
+            </ion-label>
+            <ion-label *ngIf="warning.type == 2">
+              <h2>Distance violated</h2>
+              <p>People in this room are too close to each other</p>
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
